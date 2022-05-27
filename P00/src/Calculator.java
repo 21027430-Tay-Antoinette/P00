@@ -10,6 +10,10 @@ public class Calculator {
 		return a * b;
 	}
 	public int divide(int a, int b) {
-		return a / b;
+		if (b!=0) {
+			return a / b;
+	}else {
+		throw new IllegalArgumentException("Division by zero is not accepted");
+	}
 	}
 }
